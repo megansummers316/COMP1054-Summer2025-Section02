@@ -1,0 +1,81 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #EC5A96;
+    color: #fff;
+}
+
+/* Hiya - this is a comment in CSS! */
+
+/* What can CSS do? */
+
+/* style text */
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 80px;
+}
+
+p {
+    font-size: 40px;
+}
+
+/* create layouts */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+main > div + div {
+    padding-left: 10px;
+}
+
+/* and even animations! */ 
+
+main {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+main>div+div {
+    padding-left: 10px;
+}
+
+/* animations */
+
+/* The animation code */
+@keyframes appear {
+    0% {
+        opacity: 0%; 
+    }
+
+    25% {
+        opacity: 25%; 
+    }
+
+    50% {
+        opacity: 50%; 
+    }
+
+    75% {
+        opacity: 75%;
+    }
+
+    100% {
+        opacity: 100%; 
+    }
+}
+
+/* The element to apply the animation to */
+
+h1 {
+    animation-name: appear;
+    animation-duration: 3s;
+}

@@ -1,0 +1,35 @@
+/*element selector*/
+h1 {
+color: red; 
+}
+
+
+/* class selector*/ 
+
+.title {
+  color: orange; 
+}
+
+*/
+
+/* id selector*/ 
+
+#title {
+  color: purple; 
+}
+
+*/
+
+/* pseudo class */ 
+
+h1:hover {
+  color: green; 
+} 
+
+*/
+
+/* combinators */
+
+main > div > h1 {
+  color:pink; 
+}

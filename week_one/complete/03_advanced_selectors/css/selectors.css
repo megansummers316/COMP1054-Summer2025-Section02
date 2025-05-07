@@ -1,0 +1,88 @@
+/* EXAMPLE THREE - THE *TRICKY* CSS SELECTORS */
+
+/* EXAMPLE ONE - THE *TRICKY* CSS SELECTORS */
+
+/* Pseudo Selectors */
+
+/* Pseudo Classes */
+/* specifies a special state of the selected element*/
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes*/
+
+
+/* nth-child */
+
+li:nth-child(3) {
+    border: 1px solid red;
+}
+
+li:nth-child(odd) {
+    color: orange;
+}
+
+/* nth-of-type */
+
+section:nth-of-type(2) {
+    background-color: purple;
+}
+
+ol:first-of-type {
+    border: 5px solid purple;
+}
+
+/* applies to only immediate relationships */
+/* 
+
+    TRY IT 
+    use nth of type to target the third h2
+
+    */
+
+    main section:nth-of-type(3) h2 {
+        color: yellow; 
+    }
+
+/* 
+
+    TRY IT 
+    use nth-child to target the second h2 
+
+*/
+
+section:nth-child(2) h2 {
+    color:green; 
+}
+
+
+/* Pseudo Elements */
+
+.first-line::first-line {
+    font-weight:bold; 
+}
+
+
+/* Combinators */
+
+/* Descendant Selector */
+
+.first-line em {
+    border: 3px solid red; 
+}
+
+/* Direct Child Selector */
+
+footer > p {
+    color: purple; 
+}
+
+
+/* Adjacent Sibling Selector */
+
+h2 + ul {
+    background-color: orange;
+}
+
+/* General Sibling Selector */
+
+h2 ~ p {
+    color: purple; 
+}
