@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- link to stylesheet-->
+    <link href="main.css" rel="stylesheet">
+    <title>Week Two - The Box Model</title>
+    <style>
+
+        /* 1 block vs inline elements */
+        main {
+            /* 5. overflow - set the height of main to 200px. What do you notice? */ 
+            height: 400px;
+
+            /*width: 400px;*/
+            background-color: #BADA55;
+            padding: 15px;
+            margin: 10px;
+            border: 5px dashed #333;
+
+        }
+
+
+        /* h1 {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            margin: 15px;
+        } */
+
+        /*2*/
+        /* now try span - why kind of element is this? */
+        span {
+            background: #C0FFEE;
+            height: 45px;
+            width: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #000;
+            /* change to display block*/
+            /*display: block;*/
+        }
+
+
+        /*3 */
+        /*  try setting the margin, padding, border, height and width on p */
+        /*p {
+            
+        }*/
+        /*4 */
+        /*set different margins, padding, borders on top, bottom, left and right on main element, demonstrate shorthand */
+        /*main {
+            margin: 15px; 
+            margin-top: 15px; 
+            margin-bottom: 10px; 
+            margin-left: 5px; 
+            margin-right: 5px; 
+            margin: 15px 10px 5px 5px; 
+            padding: 20px; 
+            padding-top: 5px; 
+            padding-right: 10px; 
+            padding-bottom: 15px; 
+            padding-left: 15px; 
+            padding: 5px 10px 15px 15px; 
+            border: 2px solid black; 
+            border-top: 1px dotted black; 
+            border-bottom: 2px solid grey; 
+            border-left: 3px solid red; 
+            border-right: 4px solid red; 
+        }*/
+
+
+        /* 6 */
+        /* Margin collapse - add another paragraph, set margin to see what happens. What did you expect? What happened?  */
+        main p+p {
+            background-color: #39c7a7;
+            margin-top: 30px;
+        }
+
+        /* 7 */
+        /* Standard versus Alternative Box Model*/
+        /* return to main - what should the width and height be? what are they? */
+        /* * {
+            box-sizing: border-box;
+        }*/
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Week Two - The Box Model </h1>
+        <p> In CSS, <span>everything is a box!
+            </span>Boxes generally fit into three categories: block, inline, block-inline. </p>
+        <p> In the standard box model, if you set width and height property values on a box, these values define the
+            width and height of the content box. Any padding and borders are then added to those dimensions to get the
+            total size taken up by the box. </p>
+    </main>
+</body>
+
+</html>

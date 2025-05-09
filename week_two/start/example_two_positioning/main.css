@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 2000px;
+    /*so that we can see sticky header in action! */
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+}
+
+.section {
+    margin: 40px;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+/* Static */
+/* Default positioning for all elements.Follows normal document flow (no offset applied).
+No effect from top, left, right, or bottom.*/
+
+
+/* Relative */
+/* Positioned relative to its original place in the flow.Still occupies space in the document.Can be moved using top, left, right, and bottom.*/
+
+
+/* Absolute */
+/*Removed from normal document flow.
+Positioned relative to the nearest positioned ancestor (one with position set to anything other than static).If no such ancestor exists, it is positioned relative to the initial viewport.*/
+
+
+/* Fixed */
+/*Removed from document flow.Positioned relative to the viewport. Does not move when the page is scrolled.*/
+
+
+/* Sticky */
+/* Hybrid of relative and fixed positioning.Acts relative until it hits a scroll threshold, then behaves like fixed.Good for elements like sticky headers.*/
+
+
+/* Z-index demo */
+/* Controls stacking order of overlapping elements. Uses the z-axis (in/out of the screen).Higher z-index = appears on top.Default is auto (treated as 0).Only works on positioned elements (not static). */

@@ -1,0 +1,37 @@
+/*----------------------------------
+Table of Contents 
+1 - Block Element vs Inline Element 
+2 - Margins and Padding 
+3 - Marign Collapse 
+4 - Overflow 
+5 - Standard vs. Alternative Box Model 
+---------------------------------------*/ 
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* 1 Block Element vs Inline */
+
+/* 4 Overflow */ 
+/* now try span - why kind of element is this? */
+
+
+/* 2 Margins + Padding */
+/*  try setting the margin, padding, border, height and width on p */
+
+
+
+/*set different margins, padding, borders on top, bottom, left and right on main element
+
+
+
+/* 3 - Margin Collapse */
+/*add another paragraph, set margin to see what happens. What did you expect? What happened?  */
+
+
+
+/* 5 - Standard Vs. Alternative Box Model  */
+/* return to main - what should the width and height be? what are they? */
