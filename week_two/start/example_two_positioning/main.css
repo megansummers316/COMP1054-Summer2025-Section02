@@ -71,7 +71,7 @@ Positioned relative to the nearest positioned ancestor (one with position set to
     background-color: chartreuse;
     padding: 10px;
     border: 2px solid orchid;
-    z-index: 2;
+    z-index: 3;
     /* whichever number is higher is the one that will be more forefront on the page */
 }
 
@@ -80,10 +80,15 @@ Positioned relative to the nearest positioned ancestor (one with position set to
 
 .sticky-box {
     position: sticky;
-    
+    top: 10px;
+    background-color: cornflowerblue;
+    padding: 10px;
+    border-bottom: 2px solid firebrick;
+    z-index: 2;
 }
+/* sticky will move with the element until its supposed to stick to a specific spot in its container */
 
 /* Z-index demo */
 /* Controls stacking order of overlapping elements. Uses the z-axis (in/out of the screen).Higher z-index = appears on top.Default is auto (treated as 0).Only works on positioned elements (not static). */
 
-/* check bottom of fixed-box */
+/* check bottom of fixed-box and sticky-box */
