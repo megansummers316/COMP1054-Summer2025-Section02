@@ -6,6 +6,11 @@ Table of Contents
 4 - Overflow 
 5 - Standard vs. Alternative Box Model 
 ---------------------------------------*/ 
+* {
+    /* targets all elements */
+    box-sizing: border-box;
+    /* this ensures all elements added will not add to the size of the elements */
+}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -15,22 +20,70 @@ body {
 
 /* 1 Block Element vs Inline */
 
-/* 4 Overflow */ 
+main {
+    height: 400px;
+    background-color: #bada55;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #333;
+    /* overflow: scroll; */
+    /* can do hidden as well but neither are a great option and it is better to make the space big enough for the information inside */
+}
+
 /* now try span - why kind of element is this? */
 
+span {
+    background-color: #c0ffee;
+    height: 45px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #000;
+    border: 2px dashed #000;
+    /*display: block;*/
+}
 
 /* 2 Margins + Padding */
 /*  try setting the margin, padding, border, height and width on p */
 
+/* p {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid orange;
+    width: auto;
+} */
 
+/*set different margins, padding, borders on top, bottom, left and right on main element */
 
-/*set different margins, padding, borders on top, bottom, left and right on main element
+h1 + p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 8px;
+    /* top right bottom left to combine them */
+    margin: 15px 10px 15px 8px;
 
+    padding-top: 20px;
+    padding-bottom: 45px;
+    padding-left: 10px;
+    padding-right: 15px;
+    /* works same as margin - works clockwise starting at top */
+    padding: 20px 15px 45px 10px;
+}
 
+h1 + p + p {
+    /*paragraph thats a direct sibling of a paragraph thats a direct sibling to h1 */
+    margin-top: 20px;
+    /* CSS will "margin collapse" where is takes the largest margin and uses it so instead of 10+20 being 30 it would still only be 20px */
+}
 
 /* 3 - Margin Collapse */
 /*add another paragraph, set margin to see what happens. What did you expect? What happened?  */
 
+
+/* 4 Overflow */ 
 
 
 /* 5 - Standard Vs. Alternative Box Model  */
