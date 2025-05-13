@@ -23,23 +23,67 @@ h1 {
 /* Default positioning for all elements.Follows normal document flow (no offset applied).
 No effect from top, left, right, or bottom.*/
 
+.static-box {
+    background-color: aqua;
+    padding: 10px;
+}
 
 /* Relative */
 /* Positioned relative to its original place in the flow.Still occupies space in the document.Can be moved using top, left, right, and bottom.*/
 
+.relative-box {
+    position: relative;
+    /* means its relative to its initial position on the page */
+    /* when margin adds space around it, relative moves where its positioned in its box */
+    top: 10px;
+    left: 100px;
+}
 
 /* Absolute */
 /*Removed from normal document flow.
 Positioned relative to the nearest positioned ancestor (one with position set to anything other than static).If no such ancestor exists, it is positioned relative to the initial viewport.*/
 
+.relative-container {
+    position: relative;
+    height: 100px;
+    margin-top: 20px;
+    background-color: blueviolet;
+}
+/* create the container to allow it to be relative to the positioned ancestor - parent container */
+/* if you dont have a positioned ancestor - it is in relation to the viewport */
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: chocolate;
+    padding: 10px;
+}
 
 /* Fixed */
 /*Removed from document flow.Positioned relative to the viewport. Does not move when the page is scrolled.*/
 
+/* always positioned to the viewport */
+/* viewport means the screen */
+.fixed-box {
+    position: fixed;
+    top: 25px;
+    right: 10px;
+    background-color: chartreuse;
+    padding: 10px;
+    border: 2px solid orchid;
+    z-index: 2;
+    /* whichever number is higher is the one that will be more forefront on the page */
+}
 
 /* Sticky */
 /* Hybrid of relative and fixed positioning.Acts relative until it hits a scroll threshold, then behaves like fixed.Good for elements like sticky headers.*/
 
+.sticky-box {
+    position: sticky;
+    
+}
 
 /* Z-index demo */
 /* Controls stacking order of overlapping elements. Uses the z-axis (in/out of the screen).Higher z-index = appears on top.Default is auto (treated as 0).Only works on positioned elements (not static). */
+
+/* check bottom of fixed-box */
