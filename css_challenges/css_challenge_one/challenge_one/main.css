@@ -30,6 +30,7 @@ Position .caption on top of the cat image. Include an example of a combinator se
     color: #fff; 
     padding: 10px; 
 }
+/* it is the only p element that is a direct child of div */
 div > p {
     position: absolute;
     z-index: 4;
