@@ -1,0 +1,79 @@
+/*----------------------------------
+Table of Contents 
+1 - Block Element vs Inline Element 
+2 - Margins and Padding 
+3 - Margin Collapse 
+4 - Overflow 
+5 - Standard vs. Alternative Box Model 
+---------------------------------------*/ 
+
+
+/* 5 - Standard Vs. Alternative Box Model  */
+/* return to main - what should the width and height be? what are they? */
+
+* {
+   box-sizing:border-box;  
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* 1 Block Element vs Inline */
+/*block element */
+main {
+    height: 400px; 
+    background-color: #BADA55; 
+    padding: 15px; 
+    margin: 10px; 
+    border: 1px solid #333; 
+}
+
+/* now try span - why kind of element is this? */
+/*inline element */ 
+span {
+    background-color: #C0FFEE;
+    height: 45px;
+    width: 100px; 
+    margin: 10px; 
+    padding: 10px; 
+    border-width: 2px; 
+    border-style: dashed; 
+    border-color: #000; 
+    border: 5px dashed #000; 
+   /* display:block;*/ 
+   /* we can change what type of outer display the element has using the display property */
+}
+
+
+/* 2 Margins + Padding */
+/*  try setting the margin, padding, border, height and width on p */
+
+
+/*set different margins, padding, borders on top, bottom, left and right on main element */ 
+
+h1 + p {
+    /*margin-top: 15px; 
+    margin-bottom: 15px;
+    margin-right: 10px; 
+    margin-left: 8px;*/
+    margin: 15px 10px 15px 8px;  /*short-hand */  
+   /* padding-top: 20px; 
+    padding-bottom: 45px; 
+    padding-left: 10px; 
+    padding-right: 15px; */
+    padding: 20px 15px 45px 10px;   /* short hand */ 
+}
+
+/* 3 - Margin Collapse */
+/*add another paragraph, set margin to see what happens. What did you expect? What happened?  */
+
+p + p {
+    margin-top:20px;  
+}
+
+/* if the margin on the bottom of the first paragraph is 10px and the margin at the top of the second paragraph is 20px, what would you expect the space between the two elements to be? 30px? Good guess, but nope, because of margin collapse, the largest margin is applied and the second margin "collapses" 
+  
+
