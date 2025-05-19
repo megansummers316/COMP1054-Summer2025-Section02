@@ -1,0 +1,28 @@
+/* Styling Tables */
+/* Look at Default Styles - default styles for tables are not pretty */
+
+/* Spacing & Layout */
+
+
+
+/* 
+
+- a table-layout value of fixed is generally a good idea to set on your table as it makes the table behave more predictably by default 
+- normally table columns tend to be sized according to how much content they contain - produces some strange results 
+- table layout fixed allowes you to size columsn accordin to the width of their headings 
+- set the headings to percetnage widths - the entire column follows the width of it's own heading 
+- width 100% - it will fill any container that it is placed in
+-border-collapse - standard best practice for any table styling effort 
+-add padding to the th and td elements to give some space to the data items, more legible 
+
+*/
+
+
+/* Table Typography */
+
+
+
+/* Zebra Striping */
+
+
+

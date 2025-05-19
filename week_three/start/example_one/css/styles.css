@@ -1,0 +1,108 @@
+/* Week 3 Warm Up Activity - Fix My CSS Challenge */
+/* 
+
+There are 4 errors in this CSS document. Can you and your partner find all 4? Use Dev Tools, CSS validator, your code editor to help you out! 
+
+*/
+
+/* ---------- TYPOGRAPHY  ------------------ */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:
+    width: 100%;
+}
+
+
+header h1 {
+    font-family: 'Leckerli One', cursive;
+    color: #fff;
+    font-size: 60 cats
+    margin: 0;
+    padding: 40px 0 0 30px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+main h1 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+h2 {
+    font-style: 30px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #333;
+}
+
+
+/* ---------- LAYOUT & APPEARANCE ------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+
+.mainWrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.innerWrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    padding: 40px;
+
+}
+
+header {
+    background-image: url('../assets/pexels-mikhail-nilov-6740535.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+
+header,
+footer {
+    width: 100%;
+}
+
+aside {
+    background-color: #F5F5DC;
+    padding: 20px;
+    margin-bottom: 30px 40px 50px 60px;
+}
+
+footer p {
+    padding: 0 40px;
+    text-align: right;
+}
+
+
+/* Responsive Layouts */
+/* Don't worry if this doesn't make sense now - we'll cover responsive layouts later in the semester :) */
+
+@media (max-width: 1499px) {
+    img {
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width: 1500px) {
+    .flex {
+        display: flex;
+        align-items: stretch;
+        gap: 60px;
+    }
+
+}
