@@ -3,10 +3,28 @@
 
 /* Spacing & Layout */
 
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #f539b6;
+}
+/* set width of column */
+thead /*t-head */ th:nth-child(1) {
+    width: 40%;
+}
+thead th:nth-child(2) {
+    width: 20%;
+}
+thead th:nth-child(3) {
+    width: 40%;
+}
 
+th, td {
+    padding: 15px;
+}
 
 /* 
-
 - a table-layout value of fixed is generally a good idea to set on your table as it makes the table behave more predictably by default 
 - normally table columns tend to be sized according to how much content they contain - produces some strange results 
 - table layout fixed allowes you to size columsn accordin to the width of their headings 
@@ -14,15 +32,24 @@
 - width 100% - it will fill any container that it is placed in
 -border-collapse - standard best practice for any table styling effort 
 -add padding to the th and td elements to give some space to the data items, more legible 
-
 */
-
 
 /* Table Typography */
 
+thead th {
+    text-align: left;
+    text-decoration: underline;
+}
+tbody tr td:nth-of-type(2), tbody tr td:nth-of-type(3) {
+    text-align: center;
+}
+tfoot td {
+    font-size: 1.4rem;
+    font-style: italic;
+}
 
+/* Zebra Striping - making every other row a different colour */
 
-/* Zebra Striping */
-
-
-
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}

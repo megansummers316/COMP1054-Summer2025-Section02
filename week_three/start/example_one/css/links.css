@@ -35,12 +35,12 @@ To remember the order, you could try using a mnemonic like LoVe Fears HAte. */
 /* Styling links as buttons */
 /*https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links#styling_links_as_buttons*/
 
-header {
+/* header nav ul {
     display: flex;
     gap: 1.5rem;
-}
-
+} */
 nav ul li {
+    display: inline-block;
     list-style: none; /* got rid of bullets */
 }
 nav ul li a {
