@@ -1,0 +1,50 @@
+/* Styling Tables */
+/* 
+
+- important to understand how to make use of pseudocasses to style their states effectively 
+- important to know how to style links for use in common interface features whose content varies, suchs as navigation menus and tables */
+
+
+
+/* Link States
+- links can exist in different states & can be styled uing different pseudo-classes 
+
+Link: A link that has a destination (i.e., not just a named anchor), styled using the :link pseudo class.
+
+Visited: A link that has already been visited (exists in the browser's history), styled using the :visited pseudo class.
+
+Hover: A link that is hovered over by a user's mouse pointer, styled using the :hover pseudo class.
+
+Focus: A link that is focused (e.g., moved to by a keyboard user using the Tab key or something similar, or programmatically focused using HTMLElement.focus()) — this is styled using the :focus pseudo class.
+
+Active: A link that is activated (e.g., clicked on), styled using the :active pseudo class.
+
+
+*/
+
+/* Default Styles 
+
+- links are underlined
+- unvisited links are blue
+- visited links are purple 
+- hovering a link makes the mouse pointer change to a little hand icon 
+- focused links have an outline around them - you can focus on links by presseding the tab key (on MAc option + tab) 
+- active links are red (try holding down the mouse button on the link as you click on it 
+- default styles are nearly the same as the early days of the browsers - mid 1990's 
+- users have come to know and expect this behaviour - we need to make syre links still look and act like links
+- at minimum - use underlinging for links, but not for other things (if you don't want to underline, at least highlight in some way) 
+- make links react in same way when hovered/focused and in a slightly different way when activitated 
+- default styles can be turned off/changed using - color, cursor, outline 
+
+*/
+
+/* Adding Custom Styles to Links  */
+/* the order is important because link styles build on another (the styles in the first one will apply to all the subsqeuent ones, when a link is actviated, it is also hovered) 
+- if you put it in a different order and you're changing the same properties in each ruleset, things won't work as expected 
+To remember the order, you could try using a mnemonic like LoVe Fears HAte.
+
+/* Styling links as buttons */
+/*https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links#styling_links_as_buttons*/
+
+
+

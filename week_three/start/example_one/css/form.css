@@ -1,0 +1,42 @@
+/* FORM STYLES */
+/* 1. The Good */
+
+/* the form */
+
+
+/* making sure the form is using the correct font with inherit */ 
+
+
+/* styling fieldsets & legends */
+
+
+
+/* styling inputs and labels */
+
+
+/* two column format */ 
+
+
+/* styling textfields */ 
+
+
+
+/* submit button */ 
+
+
+
+/* 2. The Bad */ 
+
+/* placeholders*/ 
+
+
+
+/* The Ugly * / 
+
+/* datepicker */ 
+
+/*check out the default datepicker in multiple browsers. What do you notice? 
+
+we don't have any access to style the datepicker calendar/components - so often need to use a js library to help us out - in this case we've used https://www.daterangepicker.com/ -->
+
+/* for datepicker placeholder text in safari */ 
