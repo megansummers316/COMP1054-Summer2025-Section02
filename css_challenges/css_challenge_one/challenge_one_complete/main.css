@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.2rem; 
+    line-height: 1.2em; 
+}
+
+/* CSS Challenge Instructions Instructions */ 
+
+/* 1.
+On container, adding a border and padding of 40px to the left and right. Make sure that the width of .container does not exceed 800px */
+
+.container {
+    box-sizing: border-box; /* use alternative box model */ 
+    width:800px;
+    padding: 0 40px 0 40px; 
+    height: 1400px; 
+    margin: 0 auto;  
+}
+
+/*2. 
+Position .caption on top of the cat image. Include an example of a combinator selector in your answer  */
+
+section div {
+    position: relative; /* position parent element */ 
+}
+
+section img {
+    width: 100%; /* make the image fill the containing div */ 
+}
+
+.photo-caption {
+    position: absolute; 
+    top: 15px; 
+    background-color: rgba(0,0,0, 0.6); 
+    color: #fff; 
+    padding: 15px; 
+}
+
+
+/* 3. 
+Create a sticky header at the top of the page. Make sure the head is always on top of other elements */ 
+
+
+header {
+    position: sticky; /* change postioning to sticky*/ 
+    top: 10px; 
+    background-color: #000; 
+    color: #fff; 
+    padding: 20px; 
+    z-index: 2 /* set z-index higher than other elements to make sure it is on top */ 
+}
+
+
+
