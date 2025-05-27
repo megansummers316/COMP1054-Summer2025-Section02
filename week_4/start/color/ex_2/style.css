@@ -1,31 +1,38 @@
-/* set theme colours 
+/* set theme colours */ 
 :root {
+  /* works on the html document */
+  --primary-color: #48e5c2;
+  --secondary-color: #c455a8;
+  --text-color: #685369;
+  --button-bg: #388e3c;
+  --button-text: #e5cdc8;
+}
 
-  }*/ 
-  
-  body {
-    
-    
-    font-family: sans-serif;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .card {
+body {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
 
-    padding: 2rem;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-  }
-  
-  button {
+.card {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
 
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    cursor: pointer;
-  }
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
   
