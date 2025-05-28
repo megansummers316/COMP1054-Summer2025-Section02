@@ -1,0 +1,45 @@
+/* 1. set theme colours */
+:root {
+  --bg-color: #fff;
+  --text-color: #333;
+  --card-bg: #f0f0f0;
+  --button-bg: #3498db;
+  --button-text: #fff;
+}
+
+/* 2. create Dark Theme Overrides */
+body.dark-theme {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --card-bg: #1e1e1e;
+  --button-bg: #2980b9;
+  --button-text: #fff;
+}
+
+/*body*/
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  padding: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+  background-color: var(--card-bg); 
+  padding: 2rem; 
+  border-radius: 10px; 
+  width: 300px; 
+  text-align: center; 
+  transition: background-color 0.3s; 
+}
+
+button {
+  background-color: var(--button-bg); 
+  color: var(--button-text); 
+  border: none; 
+  padding: 0.5em 1em; 
+  margin-top: 1em; 
+  transition: background-color 0.3s; 
+}
