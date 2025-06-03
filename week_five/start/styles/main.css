@@ -1,0 +1,65 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 62.5% /* equivalent to 10px, makes the math easier! */ 
+}
+
+/* Layout */
+
+.container {
+    background-color: #eaeaea;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+article {
+    padding: 3rem;
+    width: 65%; 
+    background-color: #F5F5DC;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+}
+
+
+/* -------WARM UP CHALLENGE - START HERE ------*/ 
+
+/*1.  alter the image using the filter property, altered image should only appear when the user hovers on the image */
+article img {
+    float: left;
+    padding-right: 3rem;
+    max-height: 400px;
+    max-width: 100%;
+}
+
+
+/* 2.  create a "sticky footer" (always at the bottom of the viewport*/
+
+
+/* 3.  style the navigation links */
+
+
+/*---------Web Typography------------ */
+
+/* STEP ONE -  set font size, line-height, line-length */ 
+
+
+/*STEP TWO - USING CUSTOM WEB FONTS */ 
+
+
+/*locally-hosted fonts*/
+/* this should typically be at the beginning of the stylesheet */ 
+
+
+/* externally hosted web fonts - ie. Google fonts  */
+
+
+/** STEP THREE - LET'S MAKE IT RESPONSIVE **/ 
+
