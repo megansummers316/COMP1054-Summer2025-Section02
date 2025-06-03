@@ -86,57 +86,6 @@ nav a:active {
 
 /* STEP ONE -  set font size, line-height, line-length */ 
 
-h1 {
-    font-size: 6rem;
-    color: #472A28;  
-}
-
-h2 {
-    font-size: 4.5rem; 
-    color: #A3795B; 
-}
-
-h3 {
-    font-size: 4rem; 
-}
-
-h4 {
-    font-size: 3.5rem; 
-}
-
-h5 {
-    font-size: 3rem; 
-}
-
-h6 {
-    font-size: 2.5rem; 
-}
-
-p, 
-figcaption {
-    font-size: 1.8rem; 
-    line-height: 1.5;
-    margin-top: 2rem; 
-    max-width: 80ch;  
-}
-
-figcaption {
-    text-align:right; 
-    font-weight: bold; 
-}
-
-p {
-    text-indent: 2rem; 
-}
-
-blockquote p {
-    font-size: 2.5rem; 
-    max-width: 70vw;
-    margin-left: auto; 
-    margin-right: auto; 
-    padding: 1rem 0; 
-    letter-spacing: 0.10rem;  
-}
 
 
 /*STEP TWO - USING CUSTOM WEB FONTS */ 
