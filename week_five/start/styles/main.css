@@ -37,20 +37,108 @@ article img {
     padding-right: 3rem;
     max-height: 400px;
     max-width: 100%;
+    filter: sepia(100%);
+}
+article img:hover {
+    filter: sepia(0%);
 }
 
-
 /* 2.  create a "sticky footer" (always at the bottom of the viewport*/
-
+footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    background-color: bisque;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
 
 /* 3.  style the navigation links */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    background-color: bisque;
+}
+header nav a {
+    color: #333;
+}
+header nav a:hover {
+    color: blue;
+}
 
+/* her code */
 
-/*---------Web Typography------------ */
+nav a:link {
+    color: #565656;
+    text-decoration: none;
+    margin-right: 2em;
+}
+nav a:visited {
+    color: #71503a;
+}
+nav a:focus {
+    border: 1px dotted #71503a;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav a:active {
+    border: 1px dotted #f5f5dc;
+}
 
-/* STEP ONE -  set font size, line-height, line-length */ 
+/*
+---------Web Typography------------ 
+The art and technique of arranging type to make written language legible, readable and appealing when displayed.
+*/
 
-
+/* STEP ONE -  set font size, line-height, line-length (max-width) */ 
+h1 {
+    font-size: 6rem;
+    line-height: 1.5;
+    color: #fe6493;
+    text-align: center;
+}
+h2 {
+    font-size: 5rem;
+    text-align: right;
+    color: #f6839f;
+}
+h3 {
+    font-size: 4rem;
+}
+h4 {
+    font-size: 3.5rem;
+}
+h5 {
+    font-size: 3rem;
+}
+h6{
+    font-size: 2.5rem;
+}
+p, figcaption {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-top: 2rem;
+    max-width: 80ch;
+}
+figcaption {
+    text-align: right;
+    font-weight: bold;
+}
+p {
+    text-indent: 2rem;
+}
+blockquote p {
+    font-size: 2.5rem;
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0;
+    letter-spacing: 0.1rem;
+}
 /*STEP TWO - USING CUSTOM WEB FONTS */ 
 
 
