@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('OpenSans-Regular-webfont.woff') format('woff'),
+         url('OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 
+@font-face allows you to define custom fonts to use on your website.
+It links a font file hosted on your server or externally, so it can be used
+in your CSS styles, even if the user's device doesn't have the font installed.
+*/
+
+
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 62.5%
+        /* equivalent to 10px, makes the math easier! */
+}
+
+/* Layout */
+
+.container {
+    background-color: #eaeaea;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+article {
+    padding: 3rem;
+    width: 65%;
+    background-color: #F5F5DC;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+}
+
+
+/* -------WARM UP CHALLENGE - START HERE ------*/
+
+/*1.  alter the image using the filter property, altered image should only appear when the user hovers on the image */
+article img {
+    float: left;
+    padding-right: 3rem;
+    max-height: 400px;
+    max-width: 100%;
+    filter: sepia(100%);
+}
+
+article img:hover {
+    filter: sepia(0%);
+}
+
+/* 2.  create a "sticky footer" (always at the bottom of the viewport)*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #000;
+    color: #FFF;
+    width: 100%;
+}
+
+/* 3.  style the navigation links */
+
+nav {
+    padding: 2.5em;
+    text-align: center;
+    padding: 2em;
+}
+
+nav a:link {
+    color: #56382E;
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding: 2em 0;
+    margin-right: 2em;
+}
+
+
+nav a:visited {
+    color: #71503A;
+}
+
+nav a:focus {
+    border: 1px solid #71503A;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
+    border: 1px dotted #F5F5DC;
+}
+
+/*---------Web Typography------------ */
+
+/* STEP ONE -  set font size, line-height, line-length */
+
+h1 {
+    font-size: 6rem; 
+    color: #472A28; 
+    text-align:center;
+    font-family: "Knewave", system-ui; /* externally hosted web fonts - ie. Google fonts  */
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 4.5rem; 
+    color: #A3795B; 
+    text-align:center; 
+}
+
+h3 {
+    font-size: 4rem; 
+}
+
+h4 {
+   font-size: 3.5rem; 
+}
+
+h5 {
+    font-size: 3rem; 
+}
+
+h6 {
+    font-size: 2.5rem; 
+}
+
+p, 
+figcaption {
+    max-width: 75ch; 
+    margin: 0 auto; 
+    font-size: 2.2rem; 
+    line-height: 1.5; 
+    padding-top: 2em; 
+}
+
+p {
+    text-indent: 2rem; 
+    font-family: 'open_sansregular', sans-serif; 
+}
+
+figcaption {
+    text-align: right; 
+    font-weight:bold; 
+}
+
+
+blockquote p {
+    font-size: 2.8rem; 
+    max-width: 70ch; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 1em 0; 
+    letter-spacing: 0.1rem;
+}
+
+/*STEP TWO - USING CUSTOM WEB FONTS */
+
+/* see comment at top of stylesheet & comment in head element of HTML */ 
+
+/** STEP THREE - LET'S MAKE IT RESPONSIVE **/
+
+/* 
+The clamp() function sets a responsive font size that adjusts based on the viewport width.
+It takes three values: a minimum (3rem), a preferred scaling value (5vw), and a maximum (8rem).
+This means:
+- The font size will never go below 3rem.
+- It will scale fluidly with the viewport width at 5% (5vw) when between the min and max.
+- It will not exceed 8rem, no matter how wide the screen is.
+This is a modern way to create responsive typography without media queries.
+*/
+
+h1 {
+    font-size: clamp(3rem, 5vw, 8rem);  
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 6rem); 
+}
+
+p {
+    font-size: clamp(2rem, 2.5vw, 3rem); 
+}
