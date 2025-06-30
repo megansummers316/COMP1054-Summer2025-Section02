@@ -1,0 +1,12 @@
+/* PART ONE - Check It Out */ 
+p {
+    padding: 0.5rem;
+    transition: background-color 0.4s ease;
+}
+
+p:hover {
+    background-color: #f0f8ff;
+}
+/**** PART TWO - Add Transition to Button for Translate property */
+
+/*TRY IT OUT - Add Another Transition for the button for colour/background-color property */

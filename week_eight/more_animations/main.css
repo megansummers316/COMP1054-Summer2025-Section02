@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper.two {
+    background-color: #000;
+    font-size: clamp(2rem, 8vw, 8rem);
+    font-family: "Play", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Step One - CSS Transitions */ 
+
+
+/* Step Two - Flashing Neon Animation **/
+
+
+
+/* Step Three -  Using Reduced Motion Media Query for Accessbility */ 
+
+
+/* Step Four - Using Animation Libraries (see HTML) */ 
+
+
+/******* Challenge Time *********
+
+1. make the button text change color on hover, use the transition property to make the transition smooth 
+
+2. add a different animation to the button (i.e. appear, fade, bounce etc.). Have this animation start after the other animation has completed. 
+
+*/ 
+
+/* References */ 
+/* text animation borrowed from by https://techblog.geekyants.com/some-of-the-most-popular-css-text-animations */
+/* transition example inspired by https://www.joshwcomeau.com/animation/css-transitions/*/ 
