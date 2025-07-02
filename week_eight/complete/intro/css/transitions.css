@@ -1,0 +1,32 @@
+/* PART ONE - Check It Out */ 
+p {
+    padding: 0.5rem;
+    transition: background-color 0.4s ease;
+}
+
+p:hover {
+    background-color: #f0f8ff;
+}
+/**** PART TWO - Add Transition to Button for Translate property */
+
+button:hover,
+.transition:hover {
+    transform:translate(0, -5px);
+    background-color: #333; 
+    color: #fff; 
+}
+
+.transition{
+    /*specifies the sty;e which to transition */ 
+    transition-property: transform, background-color, color; 
+    /* defines the length of time the transition should take */ 
+    transition-duration: 1s; 
+    /* use to vary the speed of a CSS transition-duration */ 
+    transition-timing-function: ease; 
+    transition-delay: 0s;
+    /*shorthand*/ 
+    /*transition: transform 0.5s ease 1s, background-color 0.5e ease 1s, color 0.5s ease 1s;*/ 
+}
+
+
+/*TRY IT OUT - Add Another Transition for the button for colour/background-color property */

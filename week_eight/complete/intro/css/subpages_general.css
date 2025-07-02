@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Questrial&display=swap');
+
+:root {
+    --body_font: "Questrial", sans-serif;
+    --heading_font: "Quattrocento", serif;
+}
+
+/* General Styles & Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography*/
+
+body,
+html {
+    height: 100%;
+    font-family: var(--body_font);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading_font);
+    
+}
+
+
+/* Layout & Transitions */
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+img {
+    max-width: 100%;
+    padding: 1em 0;
+}
+
+section {
+    margin-top: 2em;
+}
+
+h1 {
+    background-color: #ffb38a;
+    
+}
+
+h1, 
+h2 {
+    padding-left: 0.5rem;
+}
+
+a[href="index.html"] {
+    display:block; 
+    margin-top: 2rem;
+}
+
+h2,
+h3,
+a[href="/"] {
+    transition: color 1s;
+}
+
+h2:hover,
+h3:hover,
+a[href="/"]:hover {
+    color: #FF4D01;
+}
+
+h3 {
+    padding: 1em 0;
+}
+
+a[href="/"] {
+    color: #333; 
+    text-decoration:none;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.codepen_container {
+    padding-bottom: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+
+}
+
+/* Example Buttons */
+
+button {
+    padding: 1em 2em;
+    font-family: var(--body_font);
+    background-color: #FFF;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.podcast {
+    background-color: #FF9248;
+}
+
+.podcast a {
+    text-decoration:none; 
+    color: #FFF; 
+    padding: 0.5rem 1rem; 
+    border-radius: 2px; 
+    background-color: #ff6700; 
+    transition: background-color .25s, color 0.25s
+}
+
+.podcast p:hover {
+    background-color:#FFD464; 
+    color: #333; 
+}
