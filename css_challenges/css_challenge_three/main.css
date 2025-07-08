@@ -21,9 +21,6 @@ h2 {
   height: 60px;
   background: #4682B4;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Level 2 – Center one item in the middle of the container */
