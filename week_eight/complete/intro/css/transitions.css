@@ -2,6 +2,7 @@
 p {
     padding: 0.5rem;
     transition: background-color 0.4s ease;
+    /* transition makes the hover effect seem smoother */
 }
 
 p:hover {
@@ -12,17 +13,18 @@ p:hover {
 button:hover,
 .transition:hover {
     transform:translate(0, -5px);
+    /* she did translateY(-5px) so you only have to write the y-axis */
     background-color: #333; 
     color: #fff; 
 }
 
 .transition{
-    /*specifies the sty;e which to transition */ 
+    /* specifies the properties it wants effect */ 
     transition-property: transform, background-color, color; 
     /* defines the length of time the transition should take */ 
     transition-duration: 1s; 
     /* use to vary the speed of a CSS transition-duration */ 
-    transition-timing-function: ease; 
+    transition-timing-function: ease-in; 
     transition-delay: 0s;
     /*shorthand*/ 
     /*transition: transform 0.5s ease 1s, background-color 0.5e ease 1s, color 0.5s ease 1s;*/ 
@@ -30,3 +32,7 @@ button:hover,
 
 
 /*TRY IT OUT - Add Another Transition for the button for colour/background-color property */
+
+
+/* the CSS magic website in week8 folder gives all the examples of 
+each effect -> duration, timing-function, delay */

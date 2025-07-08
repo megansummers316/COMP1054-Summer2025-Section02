@@ -15,6 +15,7 @@
 
 /* Style for each individual animated circle */
 .circle {
+    /* different subproperties to make the animation work properly - look it up for more examples */
     position: absolute;
     border-radius: 50%;
     /* Makes it a circle */
@@ -87,6 +88,7 @@
 
 /* Define the keyframes for the "float" animation */
 @keyframes float {
+    /* tells the computer exactly where you want the animation to be at specific points during its animation process */
     0% {
         transform: translateY(100vh) scale(1);
         /* Start below the screen */
@@ -139,6 +141,7 @@ h1 {
 
 
 /* Accessibility */ 
+/* respecting browser preferences -> ensures there is no animation if the user prefers not to have it on for whatever reason */
 
 @media (prefers-reduced-motion: reduce) {
     h1,
