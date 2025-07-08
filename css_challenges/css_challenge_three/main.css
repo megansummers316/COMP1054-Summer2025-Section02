@@ -52,7 +52,7 @@ h2 {
   justify-content: center;
 }
 
-/* Level 4 – Flex-grow navigation bar */
+/* Level 4 – Flex-grow navigation bar - Goal: Make one .nav-item (with the .big class) grow to take up extra space in the navigation bar. */
 .level4 .nav-bar {
   background: #333;
   padding: 10px;
