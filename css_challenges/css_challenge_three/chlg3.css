@@ -17,6 +17,7 @@ h2 {
 .level1 .container {
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
 }
 
 .level1 .box {
@@ -30,12 +31,16 @@ h2 {
 .level2 .center-container {
   height: 200px;
   background: #eee;
+  align-content: center;
 }
 
 .level2 .center-box {
   padding: 20px;
   background: #DC143C;
   color: #fff;
+  text-align: center;
+  width: max-content;
+  margin: 0 auto;
 }
 
 /* Level 3 – Make boxes wrap responsively */
@@ -43,6 +48,8 @@ h2 {
   gap: 10px;
   background: #f4f4f4;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .level3 .item {
@@ -59,15 +66,21 @@ h2 {
 .level4 .nav-bar {
   background: #333;
   padding: 10px;
+  display: flex;
 }
 
 .level4 .nav-item {
   color: #fff;
   padding: 10px;
   text-align: center;
+  flex-grow: 1;
+  border: 2px solid purple;
+  /* added the border to show the size difference of the bigger item vs the smaller ones */
 }
 
-.level4 .big {}
+.level4 .big {
+  flex-grow: 2;
+}
 
 /* Level 5 – Full page layout using flexbox 
   Goal: Use Flexbox to build a full-page layout.
@@ -105,18 +118,27 @@ Mobile Layout :
   padding: 10px;
 }
 
-.level5 .main {}
+.level5 .main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 .level5 .sidebar,
 .level5 .ads {
   background: #ddd;
   padding: 10px;
-  width: 150px;
+  flex-grow: 1;
+  text-align: center;
 }
 
 .level5 .content {
   padding: 10px;
   background: #eee;
+  flex-grow: 1;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 @media (max-width: 768px) {
