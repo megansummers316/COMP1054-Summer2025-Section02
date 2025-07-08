@@ -11,7 +11,7 @@ body {
     text-align: center;
 }
 
-.wrapper {
+.wrapper { 
     width: 960px;
     margin: 0 auto;
 }
@@ -25,37 +25,59 @@ aside {
     width: 200px;
     height: 500px;
     background-color: #F038FF;
+    /* S1 float: left; */
 }
 
 article {
     width: 760px;
     height: 500px;
     background-color: #EF709D;
+    /* S1 float: left; */
 }
 
 footer {
     height: 200px;
     background-color: #E2EF70;
+    /* S1 clear: both; */
+}
+
+/* Solution 2 - Use Flexbox */
+
+/* my way by adding a class name
+.mainDiv {
+    display: flex;
+} */
+
+/* div:not(.wrapper) {
+    another way to select the div with class mainDiv without adding another class
+    This was her example of how to do it
+} */
+
+
+/* Solution 3 - Using Grid */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px 500px 200px;
 }
 
 nav {
-    height: 100px;
-    background-color: #3772ff;
+    grid-column: 1/6;
+    grid-row: 1/2;
 }
 
 aside {
-    width: 200px;
-    height: 500px;
-    background-color: #F038FF;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 
 article {
-    width: 760px;
-    height: 500px;
-    background-color: #EF709D;
+    grid-column: 2/6;
+    grid-row: 2/3;
 }
 
 footer {
-    height: 200px;
-    background-color: #E2EF70;
+    grid-column: 1/6;
+    grid-row: 3/3;
 }

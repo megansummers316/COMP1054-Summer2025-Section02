@@ -9,9 +9,12 @@ div {
     height: 200vw; 
     background-color: purple;
     margin-top: 50px;
+    position: relative;
 }
 
 p {
+    position: absolute;
+    right: 0;
     width: 20vw; 
     height: 20vw; 
     background-color: orange;

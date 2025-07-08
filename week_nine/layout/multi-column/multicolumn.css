@@ -4,9 +4,12 @@
 }
 
 article {
-
+    column-count: 3; 
+    /* can't change the individual sizes of the columns this way */
+    column-gap: 50;
+    column-rule: thick inset blue;
 }
 
 h2 {
-
+    column-span: all;
 }

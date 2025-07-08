@@ -14,7 +14,10 @@ h2 {
 }
 
 /* Level 1 – Use Flexbox to space items evenly in a row */
-.level1 .container {}
+.level1 .container {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .level1 .box {
   width: 60px;
