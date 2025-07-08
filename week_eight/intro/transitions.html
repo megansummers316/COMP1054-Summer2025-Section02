@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8 - All About Transitions</title>
+    <link href="css/subpages_general.css" rel="stylesheet">
+    <link href="css/transitions.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Week 8 - All About Transitions</h1>
+        </header>
+        <section>
+            <a href="index.html"> ⬅️ Back Home </a>
+            <h2> What Are Transitions in CSS? </h2>
+            <p> In CSS, elements have <em>states</em> (link states like hover, for example). By default, elements can
+                swtich
+                between these states instantly, which can be kind of jarring. </p>
+            <p> Using CSS transitions allow us to create a natural transition between states by providing the
+                opportunity to
+                <em>interpolate</em> between the first or initial state and the element's target or final state.
+                Interpolation means to create "in-between" steps.
+            </p>
+        </section>
+        <section>
+            <h2> Why Do We Use Transitions?</h2>
+            <p> By adding these extra steps, we are able to enhance user experience and interaction. Transtions can help
+                to
+                provide visual direction, confirmation, supports and hints about the cause of the effect of interaction
+                with
+                an element.</p>
+            <h3> Let's Check It Out</h3>
+            <div class="buttons">
+                <button> No Transition </button>
+                <button class="transition"> With Transition </button>
+            </div>
+        </section>
+        <section>
+            <h2> How Do We Use Them?</h2>
+            <p> There are several properties that help us add transitions to our webpages.</p>
+            <div class="img-container">
+                <img src="assets/transition.png"
+                    alt="code snippet demonstrating the different types of transition properties - also viewable in css file">
+            </div>
+            <div class="codepen_container">
+                <div>
+                    <h3> Transition Property</h3>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VwWPeEj"
+                        data-pen-title="Learn CSS: Transitions - transition-property" data-user="web-dot-dev"
+                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/web-dot-dev/pen/VwWPeEj">
+                                Learn CSS: Transitions - transition-property</a> by web.dev (<a
+                                href="https://codepen.io/web-dot-dev">@web-dot-dev</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                </div>
+                <div>
+                    <h3> Transition Duration</h3>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="wvegMYp"
+                        data-pen-title="Learn CSS: Transitions - transition-duration" data-user="web-dot-dev"
+                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/web-dot-dev/pen/wvegMYp">
+                                Learn CSS: Transitions - transition-duration</a> by web.dev (<a
+                                href="https://codepen.io/web-dot-dev">@web-dot-dev</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                </div>
+                <div>
+                    <h3> Transition Timing</h3>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWgdyZx"
+                        data-pen-title="Learn CSS: Transitions - transition-timing-function" data-user="web-dot-dev"
+                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/web-dot-dev/pen/QWgdyZx">
+                                Learn CSS: Transitions - transition-timing-function</a> by web.dev (<a
+                                href="https://codepen.io/web-dot-dev">@web-dot-dev</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                </div>
+                <div>
+                    <h3> Transition Delay</h3>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jOwyWep"
+                        data-pen-title="Learn CSS: Transitions - transition-delay" data-user="web-dot-dev"
+                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/web-dot-dev/pen/jOwyWep">
+                                Learn CSS: Transitions - transition-delay</a> by web.dev (<a
+                                href="https://codepen.io/web-dot-dev">@web-dot-dev</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                </div>
+            </div>
+            <p> In order to add a transition to your element, you must choose an element that can be animated and can
+                have
+                middle steps between their start and final states. You also need an event that will trigger that state
+                change in order to activate the transition. Common events include pseudo-classes like
+                <code> :hover, :focus, :focus-within, :target, :active</code>
+            </p>
+            <p> Be mindful of performance when adding transitions to your page. For example, when some properties like
+                width
+                and height change they cause other elements to change and move around as well, which can have an impact
+                on
+                the performance of your page. </p>
+        </section>
+        <section class="podcast">
+            <p> Want to Learn More? Check Out the CSS Podcast All About Transitions. You can find it <a href="https://thecsspodcast.libsyn.com/044-transitions">here</a>.</p>
+        </section>
+        <section>
+            <h3>References:</h3>
+            <a href="https://web.dev/learn/css/transitions">Web.Dev Transitions</a>
+        </section>
+        <a href="index.html"> ⬅️ Back Home </a>
+    </div><!--end container-->
+    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+</body>
+
+</html>

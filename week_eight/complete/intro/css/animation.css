@@ -1,0 +1,149 @@
+/* PART ONE - Animation Example */
+
+/* This animation created with ChatGPT */
+/* This container holds all the animated circles in the background */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    /* Keep it behind all page content */
+}
+
+/* Style for each individual animated circle */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    /* Makes it a circle */
+    opacity: 0.4;
+    background-color: rgba(0, 150, 255, 0.6);
+    /* Semi-transparent blue */
+
+    /* Apply the animation called "float":
+       - runs for 20 seconds
+       - loops infinitely
+       - uses ease-in-out timing for smoothness */
+    animation-name: float;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    /* Optional – explicitly sets no delay */
+    animation-direction: normal;
+    /* Optional – animation plays forward only */
+    animation-fill-mode: none;
+    /* Optional – element does not retain keyframe styles before/after animation */
+    animation-play-state: running;
+    animation-fill-mode: both;
+    /* Makes element retain styles from keyframes */
+}
+
+/* Customize each circle with size, position, speed, and delay */
+.circle:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    left: 10%;
+    animation-duration: 25s;
+    /* This circle floats more slowly */
+    animation-delay: 0s;
+    /* Starts immediately */
+}
+
+.circle:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    left: 30%;
+    animation-duration: 18s;
+    animation-delay: 2s;
+    /* Starts a little later */
+}
+
+.circle:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    animation-duration: 22s;
+    animation-delay: 4s;
+}
+
+.circle:nth-child(4) {
+    width: 120px;
+    height: 120px;
+    left: 70%;
+    animation-duration: 20s;
+    animation-delay: 6s;
+}
+
+.circle:nth-child(5) {
+    width: 90px;
+    height: 90px;
+    left: 85%;
+    animation-duration: 26s;
+    animation-delay: 3s;
+}
+
+/* Define the keyframes for the "float" animation */
+@keyframes float {
+    0% {
+        transform: translateY(100vh) scale(1);
+        /* Start below the screen */
+    }
+
+    50% {
+        transform: translateY(50vh) scale(1.2);
+        /* Halfway up, slightly larger */
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1);
+        /* Exit above the screen */
+    }
+}
+
+/* PART TWO - LET'S ANIMATE */
+/* Source - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations*/ 
+
+/* how the animation works */
+h1 {
+    animation-name: slide-in, grow-shrink ; 
+    animation-duration: 3s, 4s; 
+    animation-delay: 0s, 3s; 
+    animation-timing-function: ease-in-out, ease-in-out;
+    animation-fill-mode: forward, none; 
+}
+/* Animation One */ 
+/* define what happens in the animation */ 
+@keyframes slide-in {
+    from {
+        translate: 150vw 0;   
+    }
+    to {
+        translate: 0 0; 
+    }
+}
+
+/* Animation Two */ 
+
+@keyframes grow-shrink {
+    25%, 
+    75% {
+        scale:100%; 
+    }
+    50% {
+        scale: 110%; 
+    }
+}
+
+
+/* Accessibility */ 
+
+@media (prefers-reduced-motion: reduce) {
+    h1,
+    .circle {
+        animation:none; 
+    }
+}
+

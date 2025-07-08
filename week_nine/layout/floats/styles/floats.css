@@ -1,0 +1,122 @@
+/* let's start with a simple reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tilt Warp', cursive;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* normally, we would let content dictate the height of our elements, but they are empty, so let's set some explicit heights */
+
+
+/* visit https://coolors.co/ to generate a colour scheme for the page */
+nav {
+    height: 100px;
+    background-color: #3772ff;
+}
+
+aside {
+    height: 300px;
+    background-color: #F038FF;
+}
+
+article {
+    height: 500px;
+    background-color: #EF709D;
+}
+
+footer {
+    height: 200px;
+    background-color: #E2EF70;
+}
+
+/* Stop and look in the browser - this is the normal flow for block level elements - vertically stacked and expaned to the full width of the parent */
+
+/* let's shrink the width and the height of of the aside and see what happens */
+
+aside {
+  
+}
+
+/* what happened - The sidebar element gets narrower, but the rest of the boxes stay in the exact same position. All the blocks are still rendered vertically one after another. This is the behavior we’ll be changing with floats */
+
+/* FLOATING AN ELEMENT */
+
+/*Float the aside */
+
+aside {
+
+}
+
+
+/*float property gives us control over the horizontal position of an element*/
+/* By 'floating' the sidebar to the left, we're telling the browser to align it to the left side of the page. 
+/* This also tell surrounding elements that they can flow around the sidebar instead of beginning underneath it 
+/It's as if the sidebar is inside the article block, so any HTML markup in article would wrap around the sidebar's box 
+*/
+
+
+/* FLOATING INSIDE OF PARENTS */
+
+/*floated boxes always align to the left or right of their parent element */
+
+/* let's change the width of sidebar's parent, .wrapper */
+
+.wrapper {
+
+}
+
+
+/* MULTIPLE FLOATS */
+/*set an explicit width on article */
+article {
+
+}
+
+/* set a width on article and check width in browser - sidebar is INSIDE the article - this works for images, however, we actually want the aside and the article to be side by side 
+
+/* add float left, then experiment floating side and article with different values*/
+
+
+article {
+
+}
+
+
+/* AFTER A FLOAT*/
+/*What's up with the footer? - floated boxes are removed from the normal flow of the pge. The height of our floated elements don't contribute to the vertical position of the footer, so it sticks itself to the last element that wasn't floated. 
+
+
+/*add a red border around .wrapper to see */
+.wrapper {
+
+}
+
+/* We can fix this by clearing floats or by adding overflow:hidden */
+
+/*clearing floats */
+/* tell an element to ignore any floats that appear before it - it's like forcing a box back into the default vertical flow of the page */
+
+footer {
+
+}
+
+
+/* Move nav & footer outside of wrapper in html */
+/*only elemets in wrapper are floated, so wrapper has no height! - what if we want to add a background colour? 
+
+
+/* hiding overflow */
+
+/*clearing floats only fixes the height issue when there's an element inside the .wrapper that we can add a clear property to 
+
+/* to make floated elements contribute to height of their container without clearing floats, we can use overflow:hidden on .wrapper to tell it to recognize the height of any floated elements it contains. */
+
+.wrapper {
+}

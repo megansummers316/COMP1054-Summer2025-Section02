@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/subpages_general.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+    <title>Week 8 - All About Animations</title>
+</head>
+
+<body>
+    <div class="background-animation">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div><!--used for animation-->
+    <div class="container">
+        <header>
+            <h1> All About Animations</h1>
+        </header>
+        <section>
+            <h2> What is a CSS Animation?  </h2>
+           <p> CSS animations make it possible to animate a tansition from one CSS style to another. The animation consists of two parts - a style describing the CSS animation and a set of keyframes that describe the start and end states of the animations style.  
+        </section>
+        <section>
+            <h2> Why Use a CSS Animation?</h2>
+            <ul> 
+                <li>Easy to create basic animations (no JS required!) </li>
+                <li> Better performance - the browser can optimize for performance and efficiency</li>
+            </ul>
+        </section>
+        <section>
+            <h2> How Do We Create CSS Animations </h2>
+            <p>To create a CSS animation, you first need to configure the timing, duration and other dwtails of how the animation sequence should progress. This is done using the animation property and its <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations"></a>subproperties</a>.Next, use the @keyframes at-rule to configure the actual appearance of the animation. Each keyframe in @keyframe at-rule describes how the animated element should render at a given time during the animation. You can even add multiple animations to one element by separating values with a comma. Keep in mind, however, that a little goes a long way! Adding too many animations can be distracting and overwhelming for the user and can actually result in a poor user experience. Too many animations can also negatively impact web performance. </p>
+
+            <h3>
+                Ready? Let's Animate! 
+            </h3>
+            <div class="img-container">
+                <img src="assets/Screenshot 2025-06-27 at 12.37.11 PM.png"
+                    alt="code snippet demonstrating the different types of animation properties - also viewable in css file">
+            </div>
+        </section>
+        <section>
+            <h2>Transitions, Animations & Accessibility</h2>
+            <p>It's also important to consider accessibility when adding animations and transitions to your webpages.Blinking and flashing anumation can be problematic for people with ADHD and certain kinds of motion can be a trigger for Vestibular disorders, epilepsy and migraine and Scotopic sensitivity. Providing the ability to reduce animations or switch off animation based on the user's preference is important. We can use the prefers-reduced-motion media query to provide an expeirnece with fewer animations and transitions to users who have their operating system accessbility preference to reduce motion. </p>
+
+        </section>
+        <section class="podcast">
+            <p> Want to Learn More? Check Out the CSS Podcast All About Animations. You can find it <a
+                    href="https://open.spotify.com/episode/6IbuahSZJj7e05NmjyhiYW">here</a>.</p>
+        </section>
+        <section>
+            <h3>References:</h3>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations">MDN Web Docs - Using CSS Animations</a>
+        </section>
+        <a href="index.html"> ⬅️ Back Home </a>
+    </div><!--end container-->
+
+</body>
+
+</html>

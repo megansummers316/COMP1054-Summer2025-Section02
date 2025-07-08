@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/main.css" rel="stylesheet">
+    <title>Week 8 - CSS Magic with Transition and Animations</title>
+</head>
+
+<body>
+    <div class="background"></div><!--used for animation-->
+    <div class="content">
+        <h1>✨ Welcome to CSS Magic ✨</h1>
+        <p>Click To Add Animation & Explore</p>
+        <div class="button-container">
+            <a href="#" class="toggle-btn">Add Animation</a>
+            <a href="https://codepen.io/tag/css-animation"> See More Examples </a>
+            <a href="transitions.html"> Learn About Transitions </a>
+            <a href="animation.html"> Learn About Animations </a>
+            
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const toggleBtn = document.querySelector('.toggle-btn');
+                toggleBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    document.body.classList.toggle('animated');
+                });
+            });
+        </script>
+</body>
+</html>

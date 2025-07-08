@@ -1,0 +1,18 @@
+/*static, relative, absolute, fixed, sticky */
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+div {
+    width: 40vw; 
+    height: 200vw; 
+    background-color: purple;
+    margin-top: 50px;
+}
+
+p {
+    width: 20vw; 
+    height: 20vw; 
+    background-color: orange;
+}
