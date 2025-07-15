@@ -130,5 +130,20 @@ p {
 /********** Example 4 - Subgrid  ************************/
 
 
+.ex4 .subgrid> div {
+    background: #4caf50; 
+    color: #fff; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+.ex4 .normal-grid>div {
+    background: #f44336; 
+    color: #fff; 
+    padding: 10px; 
+    text-align:center; 
+}
+
+
 
 /* example adapted from https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids */
