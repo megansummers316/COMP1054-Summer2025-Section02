@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 90%;
+    margin: 2em auto;
+    font-family: Arial,Helvetica,sans-serif;
+  }
+  
+  a:link,
+  a:visited {
+    color: #333;
+  }
+  
+  nav ul,
+  aside ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav a:link,
+  nav a:visited {
+    background-color: rgba(207, 232, 220, 0.2);
+    border: 2px solid rgb(79, 185, 227);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    background-color: rgba(207, 232, 220, 0.7);
+  }
+  
+  .related {
+    background-color: rgba(79, 185, 227, 0.3);
+    border: 1px solid rgb(79, 185, 227);
+    padding: 10px;
+  }
+  
+  .sidebar {
+    background-color: rgba(207, 232, 220, 0.5);
+    padding: 10px;
+  }
+  
+  article {
+    margin-bottom: 1em;
+  }
+
+  .responsive-image-container {
+    width: 100%; 
+  }
+
+  .responsive-image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+article, aside, nav {
+  line-height: 1.6;
+  font-size:clamp(1rem, 1.3vw, 1.7rem); 
+}
+
+  /*This CSS gives us a two-column layout inside the article, of the article content and related information in the aside element. We have also used flexbox to put the navigation into a row.*/
+  /* Responsive Design */ 
+/* STEP ONE */ 
+  @media screen and (min-width: 40em) {
+    article {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      column-gap: 20px;
+    }
+  
+    nav ul {
+      display: flex;
+    }
+  
+    nav li {
+      flex: 1;
+    }
+  }
+
+  /* STEP TWO */ 
+  @media screen and (min-width: 70em) {
+    main {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      column-gap: 20px;
+    }
+  
+    article {
+      margin-bottom: 0;
+    }
+  
+    footer {
+      border-top: 1px solid #ccc;
+      margin-top: 2em;
+    }
+  }
