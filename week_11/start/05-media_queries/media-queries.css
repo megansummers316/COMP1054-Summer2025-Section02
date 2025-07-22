@@ -34,7 +34,25 @@ aside {
 /* Media queries usesthe @media rule to include a block of CSS properties only if a certain condition is true.*/
 
 /* media queries using pixels */
+/* using the mobile first approach then adapting for larger sizes */
+/* @media screen and (min-width:650px) { -- means 650px or larger 
+  main {
+    background-color: #f582ae;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+} */
 
 /* media queries using ems */
-
+@media screen and (min-width:40em) {
+  main {
+    background-color: #f582ae;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
 
