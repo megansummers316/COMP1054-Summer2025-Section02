@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  box-sizing: border-box;  
+}
+
+html {
+  font-size: 10px; 
+}
+
+html, 
+body {
+  height: 100%;
+  font-family: 'Comic Neue', cursive;
+}
+
+.wrapper {
+  width: 90%; /* fluid or liquid layout */ 
+  /*width: 960px; fixed-layout*/
+  margin: 0 auto;  
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  font-size: 2rem; 
+}
+
+h1 {
+  font-size: 4.5rem; 
+}
+
+h2 {
+  font-size: 3.5rem; 
+}
+
+h3 {
+  font-size: 2.5rem; 
+}
+
+main {
+  background-color: #8bd3dd;
+  padding: 20px; 
+  /*width: 576px; - fixed-layout*/
+  width:60%; /* fluid or liquid layout */ 
+  float:left;
+}
+
+aside {
+  background-color: #f3d2c1;
+  padding: 20px;
+  /*width: 384px;- fixed-layout*/
+  width: 40%; /* fluid or liquid layout */ 
+  float: right; 
+}
